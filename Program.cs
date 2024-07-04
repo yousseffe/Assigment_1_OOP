@@ -26,6 +26,12 @@
         Delete = 4,
         Execute = 8
     }
+    enum Colors
+    {
+        Red,
+        Green,
+        Blue,
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -94,6 +100,21 @@
 
             bool hasDelete = (userPermissions & Permissions.Delete) == Permissions.Delete;
             Console.WriteLine($"Has Delete permission: {hasDelete}");*/
+            #endregion
+
+            #region 5-Enum for Colors and Checking Primary Colors
+            /*Console.Write("Enter color name: ");
+                string input = Console.ReadLine();
+                Colors color;
+
+                if (Enum.TryParse(input, true, out color))
+                {
+                    Console.WriteLine($"{color} is a primary color.");
+                }
+                else
+                {
+                    Console.WriteLine($"{input} is not a primary color.");
+                }*/
             #endregion
 
         }
