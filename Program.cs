@@ -44,12 +44,12 @@
             #endregion
 
             #region 2-Struct for Person and Displaying Details
-            /*Person[] persons = new Person[3];
-            persons[0] = new Person("Alice", 25);
-            persons[1] = new Person("Bob", 30);
-            persons[2] = new Person("Charlie", 28);
+            /*Person1[] persons = new Person1[3];
+            persons[0] = new Person1("Alice", 25);
+            persons[1] = new Person1("Bob", 30);
+            persons[2] = new Person1("Charlie", 28);
 
-            foreach (Person person in persons)
+            foreach (Person1 person in persons)
             {
                 Console.WriteLine(person);
             }*/
@@ -130,6 +130,30 @@
             Console.WriteLine($"Distance between points: {distance}");*/
             #endregion
 
+            #region 7-Struct for Person and Finding the Oldest Person
+            /*Person[] persons = new Person[3];
+
+            for (int i = 0; i < persons.Length; i++)
+            {
+                Console.Write($"Enter name for person {i + 1}: ");
+                string name = Console.ReadLine();
+                Console.Write($"Enter age for person {i + 1}: ");
+                int age = int.Parse(Console.ReadLine());
+
+                persons[i] = new Person(name, age);
+            }
+
+            Person oldest = persons[0];
+            foreach (Person person in persons)
+            {
+                if (person.age > oldest.age)
+                {
+                    oldest = person;
+                }
+            }
+
+            Console.WriteLine($"The oldest person is {oldest.name} with {oldest.age} years.");*/
+            #endregion
         }
     }
 }
