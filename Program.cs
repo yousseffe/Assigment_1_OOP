@@ -17,6 +17,15 @@
         Autumn,
         Winter
     }
+    [Flags]
+    enum Permissions
+    {
+        None = 0,
+        Read = 1,
+        Write = 2,
+        Delete = 4,
+        Execute = 8
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -70,6 +79,21 @@
             {
                 Console.WriteLine("Invalid season");
             }*/
+            #endregion
+
+            #region 4-Enum for Permissions and Managing Permissions
+            /*Permissions userPermissions = Permissions.Read | Permissions.Write;
+
+            Console.WriteLine($"Current permissions: {userPermissions}");
+
+            userPermissions |= Permissions.Execute;
+            Console.WriteLine($"Permissions after adding Execute: {userPermissions}");
+
+            userPermissions &= ~Permissions.Write;
+            Console.WriteLine($"Permissions after removing Write: {userPermissions}");
+
+            bool hasDelete = (userPermissions & Permissions.Delete) == Permissions.Delete;
+            Console.WriteLine($"Has Delete permission: {hasDelete}");*/
             #endregion
 
         }
