@@ -96,21 +96,6 @@
             Console.WriteLine($"Has Delete permission: {hasDelete}");*/
             #endregion
 
-            #region 5-Enum for Colors and Checking Primary Colors
-            /*Console.Write("Enter color name: ");
-                string input = Console.ReadLine();
-                Colors color;
-
-                if (Enum.TryParse(input, true, out color))
-                {
-                    Console.WriteLine($"{color} is a primary color.");
-                }
-                else
-                {
-                    Console.WriteLine($"{input} is not a primary color.");
-                }*/
-            #endregion
-
         }
     }
 }
