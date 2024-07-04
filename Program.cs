@@ -117,6 +117,19 @@
                 }*/
             #endregion
 
+            #region 6-Struct for Point and Calculating Distance
+            /*Console.Write("Enter x and y for point 1: ");
+            string[] point1Input = Console.ReadLine().Split();
+            Point point1 = new Point(double.Parse(point1Input[0]), double.Parse(point1Input[1]));
+
+            Console.Write("Enter x and y for point 2: ");
+            string[] point2Input = Console.ReadLine().Split();
+            Point point2 = new Point(double.Parse(point2Input[0]), double.Parse(point2Input[1]));
+
+            double distance = point1.DistaceBetween(point2);
+            Console.WriteLine($"Distance between points: {distance}");*/
+            #endregion
+
         }
     }
 }
